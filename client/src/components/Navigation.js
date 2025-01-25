@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+
 import { styled } from 'styled-components'
 import avatar from '../img/avatar.png'
 import { signout } from '../utils/Icons'
@@ -9,16 +10,21 @@ function Navigation({active, setActive}) {
     return (
         <NavStyle>
             <div className="user-con">
-                <img src={avatar} alt="" />
+                <img src={avatar} alt="User Avatar" />
+
                 <div className="text">
-                    <h2>Mike</h2>
-                    <p>Your Money</p>
+                    <h2>User Name</h2>
+
+                    <p>Your Financial Overview</p>
+
                 </div>
             </div>
             <ul className="menu-items">
-                {menuItems.map((item) => {
+                {menuItems.map((item, index) => {
+
                     return <li
-                        key={item.id}
+                        key={item.id || index}
+
                         onClick={() => setActive(item.id)}
                         className={active === item.id ? 'active': ''}
                     >
