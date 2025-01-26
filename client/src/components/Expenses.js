@@ -72,3 +72,4 @@ const ExpensesStyled = styled.div`
 `
 
 export default Expenses;
+    

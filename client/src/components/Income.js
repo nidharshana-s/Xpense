@@ -4,12 +4,14 @@ import { useGlobalContext } from '../context/globalContext';
 import { InnerLayout } from '../styles/Layouts';
 import Form from './Form';
 import IncomeItem from './IncomeItem';
-const Income = () => {
-  const {addIncome, incomes, getIncomes, deleteIncome, totalIncome} = useGlobalContext()
 
-    useEffect(() =>{
-        getIncomes()
-    }, [])
+const Income = () => {
+
+  const {addIncome,incomes, getIncomes, deleteIncome, totalIncome} = useGlobalContext()
+
+  useEffect(() =>{
+      getIncomes()
+  }, [])
 
   return (
     <IncomeStyled>
