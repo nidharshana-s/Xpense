@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { dateFormat } from '../utils/dateFormat'; // Adjusted path
+import { dateFormat } from '../utils/dateFormat'; 
 import { bitcoin, book, calender, card, circle, clothing, comment, dollar, food, freelance, medical, money, piggy, stocks, takeaway, trash, tv, users, yt } from '../utils/Icons'; // Adjusted path
-import Button from './Button'; // Corrected path
+import Button from './Button';
 
 function IncomeItem({
     id,
