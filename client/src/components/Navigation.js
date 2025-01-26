@@ -13,9 +13,9 @@ function Navigation({active, setActive}) {
                 <img src={avatar} alt="User Avatar" />
 
                 <div className="text">
-                    <h2>User Name</h2>
+                    <h2>John Doe</h2>
 
-                    <p>Your Financial Overview</p>
+                    <p>Financial Overview</p>
 
                 </div>
             </div>
@@ -33,18 +33,18 @@ function Navigation({active, setActive}) {
                     </li>
                 })}
             </ul>
-            <div className="bottom-nav">
+            {/* <div className="bottom-nav">
                 <li>
                     {signout} Sign Out
                 </li>
-            </div>
+            </div> */}
         </NavStyle>
     )
 }
 
 const NavStyle = styled.nav`
     padding: 2rem 1.5rem;
-    width: 374px;
+    width: 320px;
     height: 100%;
     background: rgba(252, 246, 249, 0.78);
     border: 3px solid #FFFFFF;
